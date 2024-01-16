@@ -1,0 +1,33 @@
+<div class="banner-container">
+  <div class="banner-menu">
+    <div class="banner-header item">
+      <fa-icon [icon]="faXTwitter"></fa-icon>
+    </div>
+    <div class="banner-item-container">
+      <div class="banner-item item" *ngFor="let item of bannerItems">
+        <a class="item-container">
+          <fa-icon [icon]="item.icon"></fa-icon>
+          <span>{{ item.name }}</span>
+        </a>
+      </div>
+    </div>
+    <div class="banner-item-container">
+      <div class="banner-item item-button">
+        <span>Postear</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner-item-container">
+    <div class="banner-item item-user">
+      <div>
+        <img src="../../../assets/image/YanfrankoGarcia.jpg" alt="" />
+        <div class="user-info">
+          <span>Yanfranko Garcia</span>
+          <span>{{ "@YanfrankoG" }}</span>
+        </div>
+      </div>
+      <fa-icon [icon]="faEllipsis"></fa-icon>
+    </div>
+  </div>
+</div>
