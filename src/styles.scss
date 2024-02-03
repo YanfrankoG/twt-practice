@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --black: #202020;
+  --gray: #536471;
+  --blue: #1d9bf0;
+  --like: #f91880;
+  --green: #06b469;
 }
 
 * {
@@ -14,7 +18,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 

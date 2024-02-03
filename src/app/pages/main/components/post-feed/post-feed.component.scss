@@ -1,0 +1,61 @@
+.post-container {
+  padding: 12px 0;
+  display: flex;
+  flex-direction: row;
+
+  .post-left-side {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 12px;
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  .post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .post-btns {
+      width: 100%;
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+    }
+    img {
+      margin-top: 12px;
+      border-radius: 10px;
+      max-width: 100%;
+      max-height: 510px;
+    }
+    .post-info {
+      display: flex;
+      flex-direction: row;
+      font-size: 0.9375rem;
+
+      .info-text {
+        display: flex;
+        flex-direction: column;
+
+        .user-info {
+          display: flex;
+          flex-direction: row;
+
+          span {
+            font-weight: 700;
+          }
+          p {
+            font-weight: 400;
+            margin-left: 5px;
+            color: var(--gray);
+          }
+        }
+      }
+    }
+  }
+}

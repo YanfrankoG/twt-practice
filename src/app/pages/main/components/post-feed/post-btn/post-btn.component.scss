@@ -1,0 +1,87 @@
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .int-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .post-btn {
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray);
+    transition: all 0.2s;
+    fa-icon {
+      margin-right: 4px;
+      margin-bottom: -2.8px;
+
+      font-size: 18px;
+    }
+    span {
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+
+  .btn-hvr:hover {
+    color: var(--blue);
+  }
+
+  .btn-hvr fa-icon:after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: var(--blue);
+    width: 18px;
+    height: 18px;
+    transform: scale(1.8);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+
+  .btn-hvr:hover fa-icon:after {
+    opacity: 0.15;
+  }
+
+  .blue fa-icon:after {
+    background-color: var(--blue);
+  }
+  .blue:hover {
+    color: var(--blue);
+  }
+  .like fa-icon:after {
+    background-color: var(--like);
+  }
+  .like:hover {
+    color: var(--like);
+  }
+  .green fa-icon:after {
+    background-color: var(--green);
+  }
+  .green:hover {
+    color: var(--green);
+  }
+  .action-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .post-btn {
+      margin-left: 12px;
+
+      fa-icon {
+        margin-right: 0;
+        padding: auto;
+      }
+    }
+  }
+}

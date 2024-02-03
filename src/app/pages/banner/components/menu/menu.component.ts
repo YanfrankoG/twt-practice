@@ -14,11 +14,11 @@ import {
 } from '@fortawesome/free-regular-svg-icons';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 @Component({
-  selector: 'app-banner-menu',
-  templateUrl: './banner-menu.component.html',
-  styleUrl: './banner-menu.component.scss',
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrl: './menu.component.scss',
 })
-export class BannerMenuComponent {
+export class MenuComponent {
   faEllipsis = faEllipsis;
   faXTwitter = faXTwitter;
   bannerItems = [
